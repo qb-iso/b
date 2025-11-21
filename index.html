@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Happy Birthday!</title>
     <style>
-        /* Layout + reset */
         html,body{
-            background-image: url('./i.jpg');
             height:100%;margin:0;
             font-family:monospace       ;
             background:#f5f5f5;color:#111;-webkit-font-smoothing:antialiased}
-        .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:18px}
-        .card{width:100%;max-width:700px;border:1px solid #ddd;border-radius:12px;padding:20px;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+            .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:18px}
+            .card{
+            background: url('https://raw.githubusercontent.com/qb-iso/b/refs/heads/main/i.jpg');
+            background-size: cover; 
+                width: 100%;
+                max-width: 700px;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, .05);
+                width:100%;
+                max-width:700px;border:1px solid #ddd;border-radius:12px;padding:20px;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.05)}
         .top{display:flex;gap:16px;align-items:center}
-        /* Make all images responsive by default */
         img{max-width:100%;height:auto;display:block}
-        /* Avatar container and image */
         .avatar{width:72px;height:72px;border-radius:10px;background:#eee;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 auto}
         .avatar img{width:100%;height:100%;object-fit:cover;display:block}
         h1{margin:0;font-size:20px;line-height:1.1}
         p.lead{margin:6px 0 0;color:#555;font-size:14px}
         .message{margin-top:12px;padding:12px;border-radius:8px;background:#fafafa;color:#222;border:1px solid #eee;font-size:15px;white-space:pre-wrap}
         footer{margin-top:14px;color:#666;font-size:13px}
-        /* Make audio full width and easier to tap on mobile */
         audio{width:100%;max-width:100%;height:44px}
-        /* Mobile tweaks */
+
         @media (max-width:560px){
             .wrap{padding:12px}
             
@@ -40,7 +45,7 @@
 </head>
 <body>
     <div class="wrap">
-        <!-- <img src="./i.jpg" alt="Avatar"> -->
+        <img src="./i.jpg" alt="Avatar">
         <div class="card" role="main" aria-live="polite">
             <div class="top">
                 <div>
